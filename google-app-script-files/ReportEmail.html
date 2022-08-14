@@ -1,0 +1,98 @@
+<!-- 
+    This is the email that will be sent to the owner of the subscription.
+    It has the report of the payment status for the month of each member.
+    You can edit & replace those text just below the EDIT comments.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Report Email</title>
+ 
+     <style>
+         h1 {
+             text-align: center;
+         }
+ 
+         table {
+             border-collapse: collapse;
+             border: 1px solid;
+             letter-spacing: 1px;
+             font-size: 0.8rem;
+         }
+ 
+         td,th {
+             border: 1px solid; 
+             /* rgb(190, 190, 190); */
+             padding: 10px 20px;
+         }
+ 
+         th {
+             background-color: rgb(235, 235, 235);
+         }
+ 
+         td {
+             text-align: center;
+         }
+ 
+         .user {
+             font-weight: bold;
+         }
+ 
+     </style>
+ </head>
+ 
+ <body>
+     <!-- EDIT h1: title of report email -->
+     <h1>TITLE</h1>
+     <div>
+         <h4>Here's a report of the payments for this month.</h4>
+ 
+         <!-- DON'T EDIT BLOCK: displays table of payment status reports -->
+         <table>
+             <tr>
+                 <th>&nbsp;</th>
+                 <th><?= currentMonth ?></th>
+             </tr>
+             <tr>
+                 <td class="user"><?= users[1] ?></td>
+                 <td><?= arrStatus[0]?></td>
+             </tr>
+             <tr>
+                 <td class="user"><?= users[2] ?></td>
+                 <td><?= arrStatus[1]?></td>
+             </tr>
+             <tr>
+                 <td class="user"><?= users[3] ?></td>
+                 <td><?= arrStatus[2]?></td>
+             </tr>
+             <tr>
+                 <td class="user"><?= users[4] ?></td>
+                 <td><?= arrStatus[3]?></td>
+             </tr>
+             <tr>
+                 <td class="user"><?= users[5] ?></td>
+                 <td><?= arrStatus[4]?></td>
+             </tr>
+         </table>
+         <!-----------------DON'T EDIT BLOCK END ---------------------->
+ 
+         <br>
+         <p>Should also have sent out automated reminder emails to those who haven't paid.</p>
+         <!-- EDIT href: put url of the google sheet in the quotes-->
+         <p>Here's <a href="">the sheet</a> too.</p>
+         <p>Thank you<3</p>
+     </div>
+ 
+     <!-- CREDIT thanks<3 -->
+     <br><br><hr>
+     <footer style="text-align: center; color:rgb(102, 101, 101);">
+         <p>Cool eh? Automation script & template made by <a href="http://github.com/mikaMags">Mika Mags</a> &#129392; </p>
+         <p>Issues or feedback? Report <a href="http://">here</a> please.</p>
+     </footer>
+ </body>
+ 
+ </html>

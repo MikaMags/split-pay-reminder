@@ -1,0 +1,33 @@
+<!-- 
+    This is the email that will be sent to everyone else on the 
+    subscription list aside from the owner.
+    You can edit & replace those text just below the EDIT comments.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Shared Subscription Notification</title>
+ 
+ </head>
+ <body>
+     <!-- EDIT h1: Title header of email -->
+     <h1 style="text-align: center;">✨ Friendly reminder on this month's subscription ✨</h1>
+     <div>
+         <!-- EDIT h4: Put your messages here. ownerName automatically displays the owner's name from the sheet-->
+         <h4>Friendly reminder to pay <?= ownerName ?> this month's subscription.</h4>
+         <!-- EDIT href: Put url of sheet in the href quotes -->
+         <p>If you have paid, please update your status in <a href="">the sheet</a>.</p>
+         <p>Thank you</p>
+     </div>
+ 
+     <!-- CREDIT thanks<3 -->
+     <br><br><hr>
+     <footer style="text-align: center; color:rgb(102, 101, 101);">
+         <p>Cool eh? Automation script & template made by <a href="http://github.com/mikaMags">Mika Mags</a> &#129392; </p>
+         <p>Issues or bugs? Report <a href="http://">here</a> please.</p>
+     </footer>
+ </body>
+ </html>
