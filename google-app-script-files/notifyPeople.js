@@ -8,8 +8,8 @@
  *         https://github.com/MikaMags/
 */
 /*********** CHANGE AND PUT YOUR VALUES HERE  ******************/
-const NOTIF_EMAIL_TITLE = "title" //title of email to be sent to others
-const REPORT_EMAIL_TITLE = "title" //title of email to be sent to the owner.
+const NOTIF_EMAIL_SUBJECT = "Pay this month's subscription" //subject of email to be sent to others 
+const REPORT_EMAIL_SUBJECT = "Shared Subscription report" //subject of email to be sent to the owner.
 const LAST_ROW = 7 //last relevant row number of users (from 1). by default 7 for 6 people.
 
 /***************************************************************/
@@ -86,7 +86,7 @@ function emailNotifs() {
     {
       MailApp.sendEmail(
         arrUnpaid[i],                                         //to
-        `${NOTIF_EMAIL_TITLE} [automated]`,                   //subject
+        `${NOTIF_EMAIL_SUBJECT} [automated]`,                   //subject
           //alternate messsage if the html fails to display:
         "Reminder to pay and update the sheet",
         { htmlBody: htmlBody }      //html
@@ -119,7 +119,7 @@ function emailReport(currentMonth, arrStatus, email) {
     MailApp.sendEmail(
     email,
     // Session.getActiveUser().getEmail(),    //debugging: own email
-    `${REPORT_EMAIL_TITLE} [automated]`,
+    `${REPORT_EMAIL_SUBJECT} [automated]`,
     // alternate message if html fails:
     "Payment status info as seen in sheet. relevant reminder emails sent.",
     {htmlBody : msg}
