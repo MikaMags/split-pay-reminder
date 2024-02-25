@@ -1,7 +1,7 @@
 
 # Automated Reminders for Split Subscriptions: A Simple Template
 
-Spliting payments with friends? Keep track of payments and send automated email reminders via a simple and easy Google sheet template and a Google Apps Script. 
+Spliting a subscription with friends? Keep track of payments and send automated email reminders via a simple and easy Google sheet template and a Google Apps Script. 
 
 Just fill in the sheet template and copy the js & html into its Apps Scripts.
 
@@ -10,7 +10,7 @@ Just fill in the sheet template and copy the js & html into its Apps Scripts.
 - :heavy_check_mark: Simple, ready to use Google Sheet template
 - :heavy_check_mark: Calculates total payments
 - :heavy_check_mark: Ready to run Google Apps script
-- :heavy_check_mark: Simple HTML template for emails
+- :heavy_check_mark: HTML template for emails
 - :heavy_check_mark: Sends out reminder emails to other members
 - :heavy_check_mark: Sends payment status report email to owner 
 
@@ -33,27 +33,27 @@ Just fill in the sheet template and copy the js & html into its Apps Scripts.
 
 2. Hit `+` and add a new HTML file. Name it notifyEmail and paste all of *notifyEmail.html*. Do the same for *ReportEmail.html*.
 3. Before this script runs properly, it needs to be authenticated. Click `run` and you'll see a pop up to authenticate & `review permissions`.
-4. This window like below will appear (yes, this is [perfectly normal](https://xfanatical.com/blog/how-to-add-an-apps-script-to-my-google-doc-sheets-forms-slides/#step-4-run-the-script-now)). This is to authorize the Apps Script application to access the sheet when running it for the first time. Choose an account & click **allow**. Click on **show advanced** & **Go to [your project title]**.
+4. This window like below will appear (yes, this is [perfectly normal](https://xfanatical.com/blog/how-to-add-an-apps-script-to-my-google-doc-sheets-forms-slides/#step-4-run-the-script-now)). This is to authorize the apps script to access the sheet when running it for the first time. Choose an account & click **allow**. Click on **show advanced** & **Go to [your project title]**.
 
 <img src="/images/authentication.jpg" width="45%">
 
 ### Adding automation with Triggers
-Add a Trigger to allow your script to run automatically periodically.
+Add a Trigger to allow your script to run automatically every period of time.
 In the Apps Script page of your script,
 1. Click on `Triggers` on the left toolbar menu with the clock icon.
 2. `+ Add Trigger` on the bottom right.
-3. Fill the form as below. Set the non-highlighted ones to your requirements.
+3. Fill the form like below. Set the non-highlighted ones to your requirements.
 
 <img src="/images/triggerset.png" width="50%">
 
 ### Some things you can customize
 - Things under the `EDIT` comments can be customized to your liking.
-- Links to the sheet can be inserted in the html of the emails.  
+- Links to the sheet can be inserted in the html of the emails.
 ## Feedback
 
 If you found this helpful, please consider giving this a :star: on Github and share it with your friends :hearts:
 
 If you have any feedback, please reach out at mmagsmbol@gmail.com or issue a pull request
 
-Thank you 
+Thank you <3
 
