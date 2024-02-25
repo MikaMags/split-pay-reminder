@@ -1,5 +1,5 @@
 
-# Automated Reminders for Split Subscriptions: A Simple Template
+# Automated Reminders for Split Payments: A Simple Template
 
 Spliting payments with friends? Keep track of payments and send automated email reminders via a simple and easy Google sheet template and a Google Apps Script. 
 
